@@ -1,11 +1,17 @@
-# This code is a Python implementation of the classic Snake game using the Pygame library.
+""" 
+This code is a Python implementation of the classic Snake game using the Pygame library.
 
-# The code initializes the game variables such as the starting positions of the snake, the direction of movement, the score, and the position of the apple on the screen. It then sets up the Pygame window with the required dimensions and creates surfaces for the snake and apple graphics.
+The code initializes the game variables such as the starting positions of the snake, the direction of movement, the score, and the position of the 
+apple on the screen. It then sets up the Pygame window with the required dimensions and creates surfaces for the snake and apple graphics.
 
-# The game loop starts and waits for user input in the form of arrow keys to change the direction of the snake's movement. The code then checks for collisions with the apple and the walls of the game area. If the snake collides with itself or the walls, the game ends and the score is displayed. If the snake collides with the apple, the score is incremented and a new apple is randomly positioned on the screen.
+The game loop starts and waits for user input in the form of arrow keys to change the direction of the snake's movement. The code then checks for 
+collisions with the apple and the walls of the game area. If the snake collides with itself or the walls, the game ends and the score is 
+displayed. If the snake collides with the apple, the score is incremented and a new apple is randomly positioned on the screen.
 
-# The code also updates the position of the snake based on the direction of movement and redraws the game window to display the updated positions of the snake and apple, as well as the score. The loop continues until the game ends or the user closes the window.
-
+The code also updates the position of the snake based on the direction of movement and redraws the game window to display the updated positions of 
+the snake and apple, as well as the score. The loop continues until the game ends or the user closes the window.
+ """
+ 
 # Import necessary modules
 import pygame
 import random
@@ -61,7 +67,7 @@ while True:
                 dirs = 3
             elif e.key == K_RIGHT and dirs != 3:
                 dirs = 1
-    
+
     # Check for collisions with the apple and the snake
     i = len(xs) - 1
     while i >= 2:
@@ -74,18 +80,18 @@ while True:
         xs.append(700)
         ys.append(700)
         applepos = (random.randint(0, 590), random.randint(0, 590))
-    
+
     # Check for collisions with the walls
     if xs[0] < 0 or xs[0] > 580 or ys[0] < 0 or ys[0] > 580:
         die(s, score)
-    
+
     # Move the snake
     i = len(xs) - 1
     while i >= 1:
         xs[i] = xs[i - 1]
         ys[i] = ys[i - 1]
         i -= 1
-    
+
     if dirs == 0:
         ys[0] += 20
     elif dirs == 1:
@@ -93,12 +99,12 @@ while True:
     elif dirs == 2:
         ys[0] -= 20
     elif dirs == 3:
-        xs[0] -= 20	
+        xs[0] -= 20
 
-    s.fill((255, 255, 255))	
+    s.fill((255, 255, 255))
     for i in range(0, len(xs)):
         s.blit(img, (xs[i], ys[i]))
     s.blit(appleimage, applepos)
-    t=f.render(str(score), True, (0, 0, 0))
+    t = f.render(str(score), True, (0, 0, 0))
     s.blit(t, (10, 10))
     pygame.display.update()

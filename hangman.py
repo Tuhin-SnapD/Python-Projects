@@ -1,11 +1,20 @@
-# This code is a simple implementation of the Hangman game, where the player tries to guess a secret word by suggesting letters within a limited number of chances.
+""" 
+This code is a simple implementation of the Hangman game, where the player tries to guess a secret word by suggesting letters within a limited 
+number of chances.
 
-# The code randomly selects a word from a list of fruits and gives a hint about the word being a fruit. It then initializes a set to store the letters guessed by the player, sets the number of remaining chances to the length of the word plus two, and starts a loop until the player has used all of their chances or guessed the word correctly.
+The code randomly selects a word from a list of fruits and gives a hint about the word being a fruit. It then initializes a set to store the 
+letters guessed by the player, sets the number of remaining chances to the length of the word plus two, and starts a loop until the player has 
+used all of their chances or guessed the word correctly.
 
-# Inside the loop, the code prompts the player to input a letter to guess. It validates the input to ensure it is a single letter, adds the guessed letter to the set of guessed letters, and checks whether the letter is in the word or not. If the guessed letter is in the word, the code prints "Correct!", otherwise it prints "Incorrect!" and decrements the remaining chances.
+Inside the loop, the code prompts the player to input a letter to guess. It validates the input to ensure it is a single letter, adds the guessed 
+letter to the set of guessed letters, and checks whether the letter is in the word or not. If the guessed letter is in the word, the code prints "
+Correct!", otherwise it prints "Incorrect!" and decrements the remaining chances.
 
-# The code then prints the word with underscores in place of unguessed letters and the correct letters in place of the guessed letters. If the player has guessed all of the letters in the word, the code prints a message congratulating the player and exits the loop. If the player has used all of their chances and has not correctly guessed the word, the code prints a message informing the player that they lost and reveals the word.
-
+The code then prints the word with underscores in place of unguessed letters and the correct letters in place of the guessed letters. If the 
+player has guessed all of the letters in the word, the code prints a message congratulating the player and exits the loop. If the player has used 
+all of their chances and has not correctly guessed the word, the code prints a message informing the player that they lost and reveals the word.
+ """
+ 
 # Import the random module
 import random
 
@@ -25,7 +34,8 @@ def play_hangman():
     remaining_chances = len(word) + 2
 
     # Print a message for the player
-    print(f"Guess the word! HINT: word is a name of a fruit ({len(word)} letters).")
+    print(
+        f"Guess the word! HINT: word is a name of a fruit ({len(word)} letters).")
 
     # Loop until the player runs out of chances or correctly guesses the word
     while remaining_chances > 0:
