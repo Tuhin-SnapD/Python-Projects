@@ -1,5 +1,15 @@
 # -*- coding: utf-8 -*-
 
+""" This is a Python script that creates a graphical user interface (GUI) using the PyQt5 library. The GUI allows the user to browse for an image file and display the selected image. Here is a brief overview of what the code does:
+
+It imports necessary modules such as PyQt5 and os. It defines a main window class called MainWindow that inherits from QtWidgets.QMainWindow.
+In the constructor of the MainWindow class, it sets the window title and size, creates a central widget, creates a "Browse Image" button, a QLabel 
+for displaying the selected image, a QLabel for "Img-Display-GUI" text, a QLabel for displaying the selected file name, a QTextEdit for displaying 
+the selected file name, and a status bar.
+It defines a function called load_image which opens a file dialog to select an image file, displays the selected image in the QLabel, displays the 
+selected file name in the QTextEdit, and stores the selected file name in a variable called self.file.
+It runs the application by creating an instance of QApplication, an instance of MainWindow, and calling the show method to display the main window. Finally, it calls the exec_ method of the application instance to start the event loop. """
+
 # Form implementation generated from reading ui file 'sample.ui'
 # Created by: PyQt5 UI code generator 5.15.4
 
