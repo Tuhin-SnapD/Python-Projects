@@ -15,7 +15,7 @@ This repository contains a collection of enhanced Python projects, ranging from 
 ## 📦 Installation & Usage
 1. **Clone the repository**
    ```bash
-   git clone [<repo-url>](https://github.com/Tuhin-SnapD/Python-Projects)
+   git clone https://github.com/Tuhin-SnapD/Python-Projects
    cd Python-Projects
    ```
 2. **(Optional) Create a virtual environment**
