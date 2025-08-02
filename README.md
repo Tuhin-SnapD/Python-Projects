@@ -12,26 +12,67 @@ This repository contains a collection of enhanced Python projects, ranging from 
 
 ---
 
-## 📦 Installation & Usage
-1. **Clone the repository**
-   ```bash
-   git clone <repo-url>
-   cd Python-Projects
-   ```
-2. **(Optional) Create a virtual environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-3. **Install dependencies for all features**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   Or, install per project as needed (see below).
-4. **Run a project**
-   ```bash
-   python <project_file.py>
-   ```
+## 📦 Installation & Setup
+
+### Step 1: Clone the Repository
+```bash
+git clone <repo-url>
+cd Python-Projects
+```
+
+### Step 2: Create a Virtual Environment (Recommended)
+**Windows:**
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+**macOS/Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Step 3: Install Dependencies
+```bash
+# Install all dependencies for all projects
+pip install -r requirements.txt
+```
+
+**Or install dependencies individually:**
+```bash
+# For basic projects (no extra dependencies needed)
+# - hangman.py, tictactoegame.py, numberguessgame.py, wordguess.py
+# - mazesolver.py, slotmachine.py, rockpaperscissor.py
+
+# For Snake Game
+pip install pygame
+
+# For Image Displayer GUI
+pip install PyQt5
+
+# For PDF Merger
+pip install PyPDF2
+
+# For Password Manager
+pip install cryptography
+
+# For RoboTalker (choose one or more)
+pip install pyttsx3  # Cross-platform TTS
+pip install gtts     # Google TTS
+
+# For Weather App
+pip install requests
+```
+
+### Step 4: Run Projects
+```bash
+# Example: Run Hangman
+python hangman.py
+
+# Example: Run Snake Game
+python snakegame.py
+```
 
 ---
 
@@ -102,6 +143,7 @@ This repository contains a collection of enhanced Python projects, ranging from 
 - Some projects (like Snake, Image Displayer, PDF Merger) require additional libraries.
 - For `robotalker.py`, Windows users can use `wsay.exe` (see [wsay](https://github.com/p-groarke/wsay)), or use `pyttsx3`/`gtts` for cross-platform support.
 - The `doc/words.txt` file is required for the Word Guess game.
+- Virtual environment is recommended to avoid conflicts with system Python packages.
 
 ---
 

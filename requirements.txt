@@ -1,0 +1,13 @@
+# Core dependencies for enhanced Python projects
+requests>=2.28.0
+pygame>=2.1.0
+PyQt5>=5.15.0
+PyPDF2>=3.0.0
+cryptography>=3.4.0
+pyttsx3>=2.90
+gtts>=2.2.0
+
+# Optional dependencies for additional features
+# tkinter - usually comes with Python installation
+# wsay - Windows text-to-speech (download separately from https://github.com/p-groarke/wsay)
+# festival - Linux text-to-speech (install via package manager) 
