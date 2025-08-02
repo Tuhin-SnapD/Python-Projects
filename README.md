@@ -12,12 +12,11 @@ This repository contains a collection of enhanced Python projects, ranging from 
 
 ---
 
-<<<<<<< HEAD
 ## 📦 Installation & Setup
 
 ### Step 1: Clone the Repository
 ```bash
-git clone <repo-url>
+git clone https://github.com/Tuhin-SnapD/Python-Projects
 cd Python-Projects
 ```
 
@@ -74,28 +73,6 @@ python hangman.py
 # Example: Run Snake Game
 python snakegame.py
 ```
-=======
-## 📦 Installation & Usage
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Tuhin-SnapD/Python-Projects
-   cd Python-Projects
-   ```
-2. **(Optional) Create a virtual environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-3. **Install dependencies for all features**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   Or, install per project as needed (see below).
-4. **Run a project**
-   ```bash
-   python <project_file.py>
-   ```
->>>>>>> faa87a57f7d6f779ea9e09d2e5dc3a748ab8312b
 
 ---
 
